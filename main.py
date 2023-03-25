@@ -33,8 +33,8 @@ ttk.Label(mainframe, text="centimeters is ").grid(column=3, row=1, sticky=(W, E)
 
 ## Creating the other widgets to place the other elements of the window
 # Creating the buttons
-ttk.Button(mainframe, text="Exit", command=root.destroy).grid(column=3, row=3, sticky=W)
-ttk.Button(mainframe, text="Calculate", command=calculate).grid(column=4, row=3, sticky=W)
+ttk.Button(mainframe, text="Exit", command=root.destroy).grid(column=4, row=3, sticky=W)
+ttk.Button(mainframe, text="Calculate", command=calculate).grid(column=3, row=3, sticky=W)
 
 # Creating the result
 inches = StringVar()
@@ -50,3 +50,4 @@ root.bind("<Return>", calculate)
 # Opens the window
 root.mainloop()
 
+#create a dropdown for different conversions
